@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+          <a href="#home" class="nav-logo">Junel's Portfolio</a>
+          <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">My Skills</a></li>
+            <li><a href="#projects">My Work</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+          <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+      </nav>      
+
+<!-- Homepage -->
+<header id="home">
+    <div class="container1">
+        <img src="profile.png" alt="Profile Picture" class="profile-pic">
+        <h1>Junel Briones Molina</h1>
+        <h2 id="h2">Full-Stack Developer | UI/UX Designer</h2>
+        <p>Designing timeless digital experiences for the journey of discovery.</p>
+        <br><br>
+        <div class="cta">
+            <a href="#projects" class="btn">My Work</a>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </div>
+</header>
+
+<!-- About Me -->
+<section id="about" class="hidden">
+    <div class="container2">
+        <h2>About Me</h2>
+        <p>
+            I’m a passionate developer with expertise in HTML, CSS, JavaScript, Firebase, and MySQL.
+            I specialize in creating clean, user-friendly designs and solving technical challenges.
+        </p>
+        <a href="Professional CV Resume.pdf" target="_blank" class="btn">View Resume</a>
+    </div>
+</section>
+
+<!-- Skills and Tools -->
+<section id="skills">
+    <div class="container3">
+        <h2>Skills and Tools</h2>
+        <ul>
+            <li><i class="fas fa-code"></i> <strong>Programming Languages:</strong> HTML, CSS, JavaScript, Python, etc.</li>
+            <li><i class="fas fa-layer-group"></i> <strong>Frameworks/Libraries:</strong> Bootstrap, React, Vue.js, etc.</li>
+            <li><i class="fas fa-tools"></i> <strong>Tools:</strong> Git, Figma, Firebase, proto.io, etc.</li>
+            <li><i class="fas fa-certificate"></i> <strong>Certifications:</strong> Relevant online or professional credentials.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="hidden">
+    <div class="container4">
+        <h2>Portfolio/Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="project1.png" alt="Project 1 Image">
+                <h3>Reilon Website</h3>
+                <p>Description: A web application for car accessories.</p>
+                <p>Technologies Used: HTML, CSS, JavaScript</p>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="project2.png" alt="Project 2 Image">
+                <h3>Salazar Cottage Website</h3>
+                <p>Description: A web application designed to showcase.</p>
+                <p>Technologies Used: HTML, CSS, JavaScript</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="card">
+            <h2>Contact Me</h2>
+            <!-- Contact Form -->
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" name="send" class="btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <p>Quick Links: 
+                <a href="#home"><i class="fas fa-home"></i> Home</a> 
+                <a href="#about"><i class="fas fa-user"></i> About Me</a> 
+                <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
+            </p>
+        </div>
+
+        <div class="direct-links">
+            <p>
+                <i class="fas fa-envelope"></i> Email: <a href="mailto:junelmolina123@gmail.com">junelmolina123@gmail.com</a>  
+                <i class="fab fa-facebook"></i> <a href="https://www.facebook.com/junel.molina.96" target="_blank">Facebook</a> 
+                <i class="fab fa-github"></i> <a href="https://github.com/" target="_blank">GitHub</a>
+            </p>
+        </div>
+
+        <p class="copyright">&copy; 2024 Junel Briones Molina</p>
+    </div>
+</footer>
+
+<script src="navbar.js"></script>
+
+
+<script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+</script>
+
+</body>
+</html>
